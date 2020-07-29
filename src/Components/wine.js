@@ -33,12 +33,14 @@ export default class Wine extends React.Component {
                     this.state.wines.map((wine,i) => {
                         console.log(wine);
                         return (
+                        <div>
                             <li className="wine">
                             <Link to= {`/wines/${wine.id}`}>
                                 <img src={wine.picture} alt="wine" key={i} /> 
                                 </Link>
                                 <h2>{wine.name}</h2>                               
                             </li>
+                        </div>
                         )
                     }
                   )
